@@ -1,0 +1,55 @@
+*{
+	box-sizing: border-box;
+}
+
+.ba-container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.ba-grid{
+	width: 100%;
+}
+
+.ba-grid:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.ba-grid + .ba-grid{
+	margin-top: 20px;
+}
+
+.ba-grid > [class*="ba-width-"]{
+	float: left;
+	padding: 0 10px;
+}
+
+.ba-width-into{
+	padding: 0 !important;
+}
+
+.ba-grid-into + .ba-grid-into{
+	margin-top: 15px;
+}
+
+[class^="ba-width-"]{
+}
+
+.ba-width-2-12{
+	width: calc((100%/12)*2);
+}
+
+.ba-width-4-12{
+	width: calc((100%/12)*4);
+}
+
+.ba-width-6-12{
+	width: calc((100%/12)*6); 
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
